@@ -1,0 +1,177 @@
+/* Fondo de la página */
+body {
+    background-image: url('https://images.vexels.com/media/users/3/289789/raw/88d414e12d959d60fce018e943590c86-dise-o-de-patrones-de-elementos-veterinarios.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Contenedor principal */
+.container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 10px;
+    border-radius: 8px;
+    max-width: 1160px;  /* Reducido el tamaño del contenedor */
+    margin: auto;
+    margin-top: 3cm;  /* Espacio de 2 cm entre el menú y el contenedor */
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Cabecera */
+.title {
+    text-align: center;
+    color: #2c3e50;
+    font-weight: bold;
+    font-size: 1.6em;  /* Reducir el tamaño del título */
+}
+
+/* Contenedor para los dos secciones: catálogo y formulario */
+.content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px; /* Reducir el espacio entre las secciones */
+}
+
+/* Estilo para el contenedor del catálogo */
+.catalog-container {
+    width: 48%;
+    padding: 8px; /* Reducir el padding */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    overflow-y: auto;
+    font-size: 1.2em; /* Reducir el tamaño de la fuente */
+    margin-left: 0.5cm; /* Añadir medio cm de espacio en el lado izquierdo */
+    margin-right: 0.5cm; /* Añadir medio cm de espacio en el lado derecho */
+}
+
+/* Centrar el título Pacientitos */
+.form-container-title {
+    text-align: center;
+    color: #2c3e50;
+    font-size: 1.6em; /* Iguala el tamaño del título con el del formulario */
+}
+
+/* Estilo de las imágenes de las mascotas */
+.pet-image {
+    width: 30px; /* Reducir el tamaño de la imagen */
+    height: 30px; /* Reducir el tamaño de la imagen */
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* Estilo para el formulario */
+.form-container {
+    width: 48%;
+    padding: 10px; /* Reducir el padding */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    font-size: 0.90em; /* Reducir el tamaño de la fuente */
+}
+
+/* Asegura que el formulario tenga un título atractivo */
+.form-container h2 {
+    text-align: center;
+    color: #2c3e50;
+    font-size: 2em; /* Iguala el tamaño del título con el de Pacientitos */
+}
+
+/* Estilos para el mensaje cuando no hay mascotas */
+.no-mascotas {
+    text-align: center;
+    color: red;
+    font-weight: bold;
+}
+
+/* Alertas */
+.alert-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.alert {
+    background: #f8d7da;
+    color: #721c24;
+    padding: 6px 12px;  /* Reducir el padding */
+    border-radius: 5px;
+    margin-bottom: 8px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Centrar la tabla y el contenido */
+table {
+    width: 100%; /* Asegurarse de que la tabla ocupe todo el ancho disponible */
+    margin: 0 auto;
+    font-size: 0.75em; /* Reducir el tamaño de la fuente */
+}
+
+th,
+td {
+    text-align: center;
+    padding: 5px 8px; /* Reducir el padding de las celdas */
+}
+
+/* Separación de los botones en el formulario */
+.form-container button {
+    margin-right: 0.5cm; /* Reducir el espacio entre botones */
+    margin-top: 12px;  /* Ajuste del margen */
+    font-size: 0.80em; /* Reducir el tamaño del texto del botón */
+    padding: 7px 13px; /* Reducir el tamaño de los botones */
+    transition: transform 0.3s ease;
+}
+
+/* Agrandar todos los botones al pasar por encima */
+button:hover {
+    transform: scale(1.1);
+}
+
+/* Quitar la separación en el último botón */
+/* Separación de los botones en el formulario */
+.form-container button {
+    margin-right: 0.5cm; /* Reducir el espacio entre botones */
+    margin-top: 12px;  /* Ajuste del margen */
+    font-size: 1em; /* Aumentar el tamaño del texto del botón */
+    padding: 10px 18px; /* Aumentar el tamaño de los botones */
+    transition: transform 0.3s ease;
+}
+
+
+/* Centrar los botones */
+.form-container .button-container {
+    text-align: center;
+    margin-top: 18px;
+}
+
+/* Estilo para el campo de selección de archivo */
+.form-container input[type="file"] {
+    display: none;
+}
+
+.form-container label[for="file-upload"] {
+    display: inline-block;
+    padding: 6px 12px;
+    background-color: #5cb85c;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 5px;
+    font-size: 14px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Efecto de agrandar y cambiar color cuando el usuario pasa el cursor */
+.form-container label[for="file-upload"]:hover {
+    transform: scale(1.1);
+    background-color: #4cae4c;
+}
+
+/* Efecto de foco para el botón de selección de archivo */
+.form-container input[type="file"]:focus+label[for="file-upload"] {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
