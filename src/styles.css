@@ -15,7 +15,7 @@ body {
     border-radius: 8px;
     max-width: 1160px;  /* Reducido el tamaño del contenedor */
     margin: auto;
-    margin-top: 3cm;  /* Espacio de 2 cm entre el menú y el contenedor */
+    margin-top: 2.5cm;  /* Espacio de 2 cm entre el menú y el contenedor */
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
 }
 
